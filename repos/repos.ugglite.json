@@ -1,9 +1,9 @@
 [
   {
     "kernelSource": {
-      "name": "ugglite_KernelSU_Proton",
-      "repo": "https://github.com/xiaomi-ulysse/android_kernel_xiaomi_ulysse-4.9",
-      "branch": "10",
+      "name": "ugglite_KernelSU_Proton_release",
+      "repo": "https://github.com/szanalmas/kernel_xiaomi_ulysse-4.9",
+      "branch": "12",
       "device": "ugglite",
       "defconfig": "ulysse_defconfig"
     },
