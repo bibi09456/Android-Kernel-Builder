@@ -38,7 +38,7 @@
     },
     "AnyKernel3": {
       "use": true,
-      "release": false,
+      "release": true,
       "repo": "https://github.com/bibi09456/AnyKernel3/",
       "branch": "ugglite"
     }
