@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "Chopin_KernelSU_Proton",
-      "repo": "https://github.com/AOSP-13-Mediatek/kernel_xiaomi_chopin",
-      "branch": "r",
-      "device": "chopin",
-      "defconfig": "chopin_user_defconfig"
+      "name": "ugglite_KernelSU_Proton",
+      "repo": "https://github.com/xiaomi-ulysse/android_kernel_xiaomi_ulysse-4.9",
+      "branch": "10",
+      "device": "ugglite",
+      "defconfig": "ulysse_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "repo": "https://github.com/kdrag0n/proton-clang",
@@ -37,7 +37,7 @@
       }
     },
     "AnyKernel3": {
-      "use": false,
+      "use": true,
       "release": false,
       "repo": "https://github.com/easterNday/AnyKernel3/",
       "branch": "thyme"
