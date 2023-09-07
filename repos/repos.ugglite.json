@@ -30,7 +30,7 @@
       "ARCH": "arm64",
       "CC": "clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "gcc-arm/bin/arm-linux-androideabi-",
         "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-",
         "CC": "clang/bin/clang",
