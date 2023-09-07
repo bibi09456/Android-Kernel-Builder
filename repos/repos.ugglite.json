@@ -31,7 +31,7 @@
       "SUBARCH": "arm64",
       "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
       "CROSS_COMPILE_ARM32": "gcc-arm/bin/arm-linux-androideabi-",
-      "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-"
+      "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-",
       "externalCommand": {
         "CC": "clang/bin/clang",
         "LD": "clang/bin/ld.lld",
