@@ -30,9 +30,9 @@
       "ARCH": "arm64",
       "CC": "clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "gcc-arm/bin/arm-linux-androideabi-",
-        "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu",
         "CC": "clang/bin/clang",
         "LD": "clang/bin/ld.lld",
         "AR": "clang/bin/llvm-ar",
@@ -42,6 +42,10 @@
         "READELF": "clang/bin/llvm-readelf",
         "OBJSIZE": "clang/bin/llvm-size",
         "STRIP": "clang/bin/llvm-strip",
+        "HOSTCC": "clang/bin/clang",
+        "HOSTCXX": "clang/bin/clang++",
+        "HOSTAR": "clang/bin/llvm-ar",
+        "HOSTLD": "clang/bin/ld.lld",
         "LLVM_AR": "clang/bin/llvm-ar",
         "LLVM_DIS": "clang/bin/llvm-dis"
       }
