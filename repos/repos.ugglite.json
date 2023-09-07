@@ -33,7 +33,8 @@
         "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
         "CROSS_COMPILE_ARM32": "gcc-arm/bin/arm-linux-androideabi-",
         "CLANG_TRIPLE": "aarch64-linux-gnu",
-        "LLVM": "1"
+        "LLVM": "1",
+        "LLVM_IAS": "1"
       }
     },
     "AnyKernel3": {
