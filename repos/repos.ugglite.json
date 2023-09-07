@@ -34,6 +34,7 @@
         "CROSS_COMPILE_ARM32": "gcc-arm/bin/arm-linux-androideabi-",
         "CLANG_TRIPLE": "aarch64-linux-gnu",
         "CC": "clang/bin/clang",
+        "AS": "clang/bin/llvm-as"
         "LD": "clang/bin/ld.lld",
         "AR": "clang/bin/llvm-ar",
         "NM": "clang/bin/llvm-nm",
