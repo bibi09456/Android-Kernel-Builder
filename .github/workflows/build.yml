@@ -120,15 +120,19 @@ jobs:
               case "$filename" in
                 *.zip)
                   unzip -d $toolchain_name "$filename"
+                  rm $filename
                   ;;
                 *.tar)
                   tar xvf "$filename" -C $toolchain_name
+                  rm $filename
                   ;;
                 *.tar.gz)
                   tar zxvf "$filename" -C $toolchain_name
+                  rm $filename
                   ;;
                 *.rar)
                   unrar x "$filename" $toolchain_name
+                  rm $filename
                   ;;
                 *)
                   echo "unknown file type: $filename"
