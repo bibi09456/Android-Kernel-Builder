@@ -28,11 +28,11 @@
     "ccache": false,
     "params": {
       "ARCH": "arm64",
-      "SUBARCH": "arm64",
-      "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
-      "CROSS_COMPILE_ARM32": "gcc-arm/bin/arm-linux-androideabi-",
-      "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-",
+      "CC": "clang/bin/clang",
       "externalCommand": {
+        "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "gcc-arm/bin/arm-linux-androideabi-",
+        "CLANG_TRIPLE": "gcc/bin/aarch64-linux-android-",
         "CC": "clang/bin/clang",
         "LD": "clang/bin/ld.lld",
         "AR": "clang/bin/llvm-ar",
