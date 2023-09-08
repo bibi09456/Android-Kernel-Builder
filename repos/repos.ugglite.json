@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "ugglite_KernelSU_Proton_release",
+      "name": "ugglite_clang_release",
       "repo": "https://github.com/bibi09456/android_kernel_xiaomi_msm8937",
       "branch": "lineage-20",
       "device": "ugglite",
