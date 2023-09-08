@@ -1,13 +1,13 @@
 [
   {
     "kernelSource": {
-      "name": "ugglite_clang_release",
+      "name": "ugglite_KernelSU_clang_release",
       "repo": "https://github.com/bibi09456/android_kernel_xiaomi_msm8937",
       "branch": "lineage-20",
       "device": "ugglite",
       "defconfig": "ugglite_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
       {
         "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/refs/tags/android-13.0.0_r0.111.tar.gz",
