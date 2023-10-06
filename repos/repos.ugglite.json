@@ -1,24 +1,14 @@
 [
   {
     "kernelSource": {
-      "name": "ugglite_docker_clang_release",
-      "repo": "https://github.com/bibi09456/android_kernel_xiaomi_msm8937",
-      "branch": "lineage-20",
-      "device": "ugglite",
-      "defconfig": "ugglite_defconfig"
+      "name": "mi8937_docker_KernelSU_clang_release",
+      "repo": "https://github.com/bibi09456/kernel-msm-4.19",
+      "branch": "mithorium/a13/master",
+      "device": "mi8937",
+      "defconfig": "mi8937_defconfig"
     },
-    "withKernelSU": false,
+    "withKernelSU": true,
     "toolchains": [
-      {
-        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/+archive/refs/tags/android-13.0.0_r0.111.tar.gz",
-        "name": "gcc-arm",
-        "binPath": ["bin"]
-      },
-      {
-        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-13.0.0_r0.111.tar.gz",
-        "name": "gcc",
-        "binPath": ["bin"]
-      },
       {
         "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r498229b.tar.gz",
         "name": "clang",
@@ -30,11 +20,7 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommand": {
-        "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "gcc-arm/bin/arm-linux-androideabi-",
-        "CLANG_TRIPLE": "aarch64-linux-gnu",
         "LLVM": "1",
-        "LLVM_IAS": "1"
       }
     },
     "AnyKernel3": {
