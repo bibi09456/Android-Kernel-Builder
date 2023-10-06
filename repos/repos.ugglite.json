@@ -20,7 +20,7 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommand": {
-        "LLVM": "1",
+        "LLVM": "1"
       }
     },
     "AnyKernel3": {
