@@ -15,7 +15,7 @@
         "binPath": ["bin"]
       },
       {
-        "repo": "https://gitlab.com/VoidUI/snapdragon-clang -b aosp-13",
+        "repo": "https://gitlab.com/VoidUI/snapdragon-clang.git -b aosp-13",
         "name": "clang",
         "binPath": ["bin"]
       }
