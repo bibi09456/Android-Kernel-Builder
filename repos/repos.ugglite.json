@@ -10,7 +10,12 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r498229b.tar.gz",
+        "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/refs/tags/android-14.0.0_r0.1.tar.gz",
+        "name": "gcc",
+        "binPath": ["bin"]
+      },
+      {
+        "repo": "https://gitlab.com/VoidUI/snapdragon-clang",
         "name": "clang",
         "binPath": ["bin"]
       }
@@ -20,6 +25,9 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommand": {
+        "CROSS_COMPILE": "aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
+        "CLANG_TRIPLE": "aarch64-linux-gnu",
         "LLVM": "1",
         "LLVM_IAS": "1"
       }
