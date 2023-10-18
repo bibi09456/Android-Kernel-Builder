@@ -20,7 +20,7 @@
         "binPath": ["bin"]
       },
       {
-        "repo": "https://gitlab.com/VoidUI/snapdragon-clang.git -b aosp-13",
+        "repo": "https://gitlab.com/ZyCromerZ/sdclang-16.1.0.1.git -b main",
         "name": "clang",
         "binPath": ["bin"]
       }
