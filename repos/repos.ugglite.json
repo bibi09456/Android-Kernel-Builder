@@ -20,9 +20,10 @@
         "binPath": ["bin"]
       },
       {
-        "repo": "https://gitlab.com/ZyCromerZ/sdclang-16.1.0.1.git -b main",
+        "repo": "https://gitlab.com/ZyCromerZ/sdclang-16.1.0.1.git",
+        "branch": "main",
         "name": "clang",
-        "binPath": ["bin"]
+        "binPath": ["./bin"]
       }
     ],
     "ccache": false,
