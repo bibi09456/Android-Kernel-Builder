@@ -20,10 +20,9 @@
         "binPath": ["bin"]
       },
       {
-        "repo": "https://gitlab.com/ZyCromerZ/sdclang-16.1.0.1.git",
-        "branch": "main",
+        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r498229b.tar.gz",
         "name": "clang",
-        "binPath": ["./bin"]
+        "binPath": ["bin"]
       }
     ],
     "ccache": false,
