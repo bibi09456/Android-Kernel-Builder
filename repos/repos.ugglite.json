@@ -33,7 +33,7 @@
       "externalCommand": {
         "CROSS_COMPILE": "aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-        "LLVM": "1",
+        "LLVM": "1"
       }
     },
     "AnyKernel3": {
