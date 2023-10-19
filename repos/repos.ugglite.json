@@ -20,7 +20,8 @@
         "binPath": ["bin"]
       },
       {
-        "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/main/clang-r498229b.tar.gz",
+        "repo": "https://gitlab.com/bibi0941/sdclang.git",
+        "branch": "main",
         "name": "clang",
         "binPath": ["bin"]
       }
@@ -30,11 +31,9 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommand": {
-        "CROSS_COMPILE": "aarch64-linux-android-",
-        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
-        "CLANG_TRIPLE": "aarch64-linux-gnu",
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
         "LLVM": "1",
-        "LLVM_IAS": "1"
       }
     },
     "AnyKernel3": {
