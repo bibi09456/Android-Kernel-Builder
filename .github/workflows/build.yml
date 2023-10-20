@@ -178,9 +178,6 @@ jobs:
           while read -r externalCommand; do
             key=$(echo "$externalCommand" | cut -d= -f1)
             value=$(echo "$externalCommand" | cut -d= -f2)
-            if [[ "$value" == *"/"* ]]; then
-              value="${{ env.WORKSPACE }}/$value"
-            fi
             args="$args $key=$value"
           done < <(jq -r '.externalCommand | to_entries[] | "\(.key)=\(.value)"' <<< "$params")
         
