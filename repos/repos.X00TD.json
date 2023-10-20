@@ -1,0 +1,38 @@
+[
+  {
+    "kernelSource": {
+      "name": "X00TD-ksu-docker-custom_sdclang_release",
+      "repo": "https://github.com/bibi09456/kernel_asus_sdm660-4.19",
+      "branch": "lineage-20.0",
+      "device": "X00TD",
+      "defconfig": "asus/X00TD-ksu-docker-custom_defconfig"
+    },
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "repo": "https://gitlab.com/bibi0941/sdclang.git",
+        "branch": "main",
+        "name": "clang",
+        "binPath": ["bin"]
+      }
+    ],
+    "ccache": false,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang",
+      "externalCommand": {
+        "CROSS_COMPILE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
+        "LLVM": "1",
+        "HOSTCC": "/usr/bin/clang",
+        "HOSTCXX": "/usr/bin/clang++"
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+      "repo": "https://github.com/bibi09456/AnyKernel3/",
+      "branch": "X00TD"
+    }
+  }
+]
