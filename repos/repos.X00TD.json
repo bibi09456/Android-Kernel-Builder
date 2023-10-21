@@ -25,7 +25,8 @@
         "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
         "LLVM": "1",
         "HOSTCC": "/usr/bin/clang",
-        "HOSTCXX": "/usr/bin/clang++"
+        "HOSTCXX": "/usr/bin/clang++",
+        "V": "1"
       }
     },
     "AnyKernel3": {
