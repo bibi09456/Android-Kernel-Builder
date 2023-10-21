@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "X00TD-ksu-docker-custom_sdclang_release",
       "repo": "https://github.com/bibi09456/kernel_asus_sdm660-4.19",
-      "branch": "lineage-20.0",
+      "branch": "test2",
       "device": "X00TD",
       "defconfig": "asus/X00TD-ksu-docker-custom_defconfig"
     },
