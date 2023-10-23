@@ -3,12 +3,22 @@
     "kernelSource": {
       "name": "X00TD-ksu-docker-custom_sdclang_release",
       "repo": "https://github.com/bibi09456/kernel_asus_sdm660-4.19",
-      "branch": "test2",
+      "branch": "lineage-20.0",
       "device": "X00TD",
       "defconfig": "asus/X00TD-ksu-docker-custom_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
+      {
+        "url": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9/archive/refs/heads/lineage-19.1.zip",
+        "name": "gcc-arm",
+        "binPath": ["bin"]
+      },
+      {
+        "url": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/archive/8251e309d3d4f50f7f2f2cd09f0a83c86d8b4fd3.zip",
+        "name": "gcc",
+        "binPath": ["bin"]
+      },
       {
         "repo": "https://gitlab.com/bibi0941/sdclang.git",
         "branch": "main",
@@ -21,12 +31,11 @@
       "ARCH": "arm64",
       "CC": "clang",
       "externalCommand": {
-        "CROSS_COMPILE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
+        "CROSS_COMPILE": "aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
         "LLVM": "1",
         "HOSTCC": "/usr/bin/clang",
         "HOSTCXX": "/usr/bin/clang++",
-        "V": "1"
       }
     },
     "AnyKernel3": {
