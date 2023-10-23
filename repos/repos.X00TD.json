@@ -10,12 +10,12 @@
     "withKernelSU": false,
     "toolchains": [
       {
-        "url": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9/archive/refs/heads/lineage-19.1.zip",
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
         "name": "gcc-arm",
         "binPath": ["bin"]
       },
       {
-        "url": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/archive/8251e309d3d4f50f7f2f2cd09f0a83c86d8b4fd3.zip",
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
         "name": "gcc",
         "binPath": ["bin"]
       },
