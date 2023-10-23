@@ -35,7 +35,7 @@
         "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
         "LLVM": "1",
         "HOSTCC": "/usr/bin/clang",
-        "HOSTCXX": "/usr/bin/clang++",
+        "HOSTCXX": "/usr/bin/clang++"
       }
     },
     "AnyKernel3": {
