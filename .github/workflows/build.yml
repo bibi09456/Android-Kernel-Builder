@@ -177,8 +177,8 @@ jobs:
             fi
           fi
           while read -r externalCommand; do
-            key=$(echo "$externalCommand" | cut -d= -f1)
-            value=$(echo "$externalCommand" | cut -d= -f2)
+            key=$(echo "$externalCommand" | cut -f1)
+            value=$(echo "$externalCommand" | cut -f2)
             args="$args $key=$value"
           done < <(jq -r '.externalCommand | to_entries[] | "\(.key)=\(.value)"' <<< "$params")
         
