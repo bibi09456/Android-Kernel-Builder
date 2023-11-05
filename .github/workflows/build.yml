@@ -178,6 +178,7 @@ jobs:
               args="$args CC=$CC"
             fi
           fi
+          externalCommand=$(echo $params | jq -r ".externalCommand")
           args="$args $externalCommand"
         
           echo "🤔 $args"
