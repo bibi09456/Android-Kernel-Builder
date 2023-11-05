@@ -178,11 +178,7 @@ jobs:
               args="$args CC=$CC"
             fi
           fi
-          while read -r externalCommand; do
-            key=$(echo "$externalCommand" | cut -f1)
-            value=$(echo "$externalCommand" | cut -f2)
-            args="$args $key"
-          done < <(jq -r '.externalCommand | to_entries[] | "\(.key)"' <<< "$params")
+          args="$args $externalCommand"
         
           echo "🤔 $args"
           echo "ARCH=$ARCH" >> $GITHUB_OUTPUT
