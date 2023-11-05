@@ -181,8 +181,8 @@ jobs:
           while read -r externalCommand; do
             key=$(echo "$externalCommand" | cut -f1)
             value=$(echo "$externalCommand" | cut -f2)
-            args="$args $key=$value"
-          done < <(jq -r '.externalCommand | to_entries[] | "\(.key)=\(.value)"' <<< "$params")
+            args="$args $key"
+          done < <(jq -r '.externalCommand | to_entries[] | "\(.key)"' <<< "$params")
         
           echo "🤔 $args"
           echo "ARCH=$ARCH" >> $GITHUB_OUTPUT
