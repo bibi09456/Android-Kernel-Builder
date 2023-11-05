@@ -221,6 +221,8 @@ jobs:
           args: ${{ steps.generate-args.outputs.args }}
         run: |
           echo "PATH Variable: $PATH"
+          ulimit -s unlimited
+          getconf ARG_MAX
           make ${{ env.args }}
 
       - name: "💛 Upload Image"
