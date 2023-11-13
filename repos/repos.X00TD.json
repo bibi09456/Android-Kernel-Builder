@@ -32,7 +32,7 @@
     "params": {
       "ARCH": "arm64",
       "CC": "clang",
-      "externalCommand": "CROSS_COMPILE=aarch64-linux-android- CROSS_COMPILE_ARM32=arm-linux-androideabi- CLANG_TRIPLE=aarch64-linux-gnu LLVM=1 LLVM_IAS=1 HOSTCC=/usr/bin/clang HOSTCXX=/usr/bin/clang++ KCFLAGS='-mcpu=cortex-a57 -O3'"
+      "externalCommand": "CROSS_COMPILE=aarch64-linux-android- CROSS_COMPILE_ARM32=arm-linux-androideabi- CLANG_TRIPLE=aarch64-linux-gnu LLVM=1 HOSTCC=/usr/bin/clang HOSTCXX=/usr/bin/clang++ KCFLAGS='-mcpu=cortex-a57 -O3'"
     },
     "AnyKernel3": {
       "use": true,
