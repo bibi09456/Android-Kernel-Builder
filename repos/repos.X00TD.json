@@ -5,7 +5,7 @@
       "repo": "https://github.com/bibi09456/kernel_asus_sdm660-4.19",
       "branch": "main",
       "device": "X00TD",
-      "defconfig": "X00TD-custom_defconfig"
+      "defconfig": "asus/X00TD-custom_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
