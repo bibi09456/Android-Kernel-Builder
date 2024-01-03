@@ -3,9 +3,9 @@
     "kernelSource": {
       "name": "X00TD-ksu-docker-custom_sdclang_release",
       "repo": "https://github.com/bibi09456/kernel_asus_sdm660-4.19",
-      "branch": "caf",
+      "branch": "main",
       "device": "X00TD",
-      "defconfig": "X00TD_defconfig"
+      "defconfig": "X00TD-custom_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
@@ -32,7 +32,7 @@
     "params": {
       "ARCH": "arm64",
       "CC": "clang",
-      "externalCommand": "CROSS_COMPILE=aarch64-linux-android- CROSS_COMPILE_ARM32=arm-linux-androideabi- CLANG_TRIPLE=aarch64-linux-gnu LLVM=1 HOSTCC=/usr/bin/clang HOSTCXX=/usr/bin/clang++ KCFLAGS='-mcpu=cortex-a57 -O3'"
+      "externalCommand": "CROSS_COMPILE=aarch64-linux-android- CROSS_COMPILE_ARM32=arm-linux-androideabi- CLANG_TRIPLE=aarch64-linux-gnu LLVM=1 HOSTCC=/usr/bin/clang HOSTCXX=/usr/bin/clang++ KCFLAGS=-mcpu=cortex-a57"
     },
     "AnyKernel3": {
       "use": true,
