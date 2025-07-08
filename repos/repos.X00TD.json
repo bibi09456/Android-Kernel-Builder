@@ -2,17 +2,17 @@
   {
     "kernelSource": {
       "name": "X00TD-ksu-docker-custom_release",
-      "repo": "https://github.com/Tiktodz/android_kernel_asus_sdm660",
+      "repo": "https://github.com/bibi09456/android_kernel_asus_sdm660-4.19",
       "branch": "stable",
       "device": "X00TD",
-      "defconfig": "asus/X00TD-custom_defconfig"
+      "defconfig": "X00TD_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
       {
         "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.7/LLVM-20.1.7-Linux-X64.tar.xz",
         "branch": "main",
-        "name": "llvm",
+        "name": ".",
         "binPath": ["LLVM-20.1.7-Linux-X64/bin"]
       }
     ],
@@ -20,7 +20,7 @@
     "params": {
       "ARCH": "arm64",
       "CC": "clang",
-      "externalCommand": "CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi- LLVM=1 LLVM_IAS=1 HOSTCC=/usr/bin/clang HOSTCXX=/usr/bin/clang++ HOSTLD=/usr/bin/clang HOSTAR=/usr/bin/llvm-ar HOSTAS=/usr/bin/llvm-as HOSTCFLAGS=\"-O3 -march=native -flto=thin -mllvm=-polly -mllvm=-polly-vectorizer=stripmine -mllvm=-polly-omp-backend=LLVM -mllvm=-polly-parallel -mllvm=-polly-num-threads=0 -mllvm=-polly-scheduling=dynamic -fwhole-program-vtables -fforce-emit-vtables -fstrict-vtable-pointers\" HOSTCXXFLAGS=\"$(HOSTCFLAGS)\" HOSTLDFLAGS=-fuse-ld=lld KCFLAGS=-mcpu=cortex-a73"
+      "externalCommand": "CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_ARM32=arm-linux-gnueabi- LLVM=1 LLVM_IAS=1 HOSTAR=llvm-ar HOSTAS=llvm-as HOSTCFLAGS=\"-O3 -march=native -flto=thin -mllvm=-polly -mllvm=-polly-vectorizer=stripmine -mllvm=-polly-omp-backend=LLVM -mllvm=-polly-parallel -mllvm=-polly-num-threads=0 -mllvm=-polly-scheduling=dynamic -fwhole-program-vtables -fforce-emit-vtables -fstrict-vtable-pointers\" HOSTCXXFLAGS=\"${HOSTCFLAGS}\" HOSTLDFLAGS=\"${HOSTCFLAGS} -fuse-ld=lld\" KCFLAGS=-mcpu=cortex-a73"
     },
     "AnyKernel3": {
       "use": true,
