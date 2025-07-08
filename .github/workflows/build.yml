@@ -59,7 +59,7 @@ jobs:
       - name: "⭐ Install prerequisites"
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential clang lld llvm bc bison libssl-dev libfl-dev libncurses5-dev libzstd-dev
+          sudo apt-get install -y build-essential bc bison libssl-dev libfl-dev libncurses5-dev libzstd-dev
           sudo apt-get install -y curl git ftp lftp wget libarchive-tools ccache
           sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar cpio
 
@@ -130,6 +130,10 @@ jobs:
                   ;;
                 *.tar.gz)
                   tar zxvf "$filename" -C $toolchain_name
+                  rm $filename
+                  ;;
+                *.tar.xz)
+                  tar xvf "$filename" -C $toolchain_name
                   rm $filename
                   ;;
                 *.rar)
