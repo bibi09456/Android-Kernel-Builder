@@ -11,7 +11,7 @@
     "toolchains": [
       {
         "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-20.1.8/LLVM-20.1.8-Linux-X64.tar.xz",
-        "name": "",
+        "name": ".",
         "binPath": ["LLVM-20.1.8-Linux-X64/bin"]
       }
     ],
